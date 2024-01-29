@@ -14,9 +14,9 @@ N/A
 
 To explore the portfolio, visit the deployed URL. The site is structured into various sections: Home, About, Projects, Services, Resume, and Contact. Each section offers detailed insights into different aspects of web development skills, professional experiences, and personal projects.
 
-This is the link of my [GitHub repository](https://github.com/Kirill777-web/PortfolioWebDev)
+This is the link of my [GitHub repository](https://github.com/Kirill777-web/FullStack-WebDev-Portfolio)
 
-This is the link of my [Netlify](https://portfoliowebdevkirill.netlify.app/)
+This is the link of my [Amplify]()
 
 ## Credits
 
