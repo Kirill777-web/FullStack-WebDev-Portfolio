@@ -10,7 +10,7 @@ const achievements = [
     title: 'WebDeveloper Bootcamp UNB',
     year: '2024',
     description:
-      'I have recently completed a comprehensive Full-Stack Web Development Boot Camp at the University of New Brunswick, marking a significant milestone in my journey as a web developer. This intensive program has been a challenging yet immensely rewarding experience, equipping me with a wealth of hands-on skills in both front-end and back-end development.',
+      'I have recently completed a comprehensive Full-Stack Web Development Boot Camp at the University of New Brunswick, marking a significant milestone in my journey as a web developer. This intensive program has been a challenging yet immensely rewarding experience, equipping me with a wealth of hands-on skills in both front-end and back-end development. Skills: HTML/CSS, JavaScript, Web-API, NodeJS, ExpressJS, NoSQL, MongoDB, MySQL, ReactJS, Figma, Postman, Insomnia.',
     imageUrl: UNB,
   },
   {
