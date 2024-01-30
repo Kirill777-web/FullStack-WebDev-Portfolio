@@ -32,7 +32,7 @@ const ContactMeSection = () => {
       comment: '',
     },
     onSubmit: (values) => {
-      submit('http://localhost:3001/send-email', values);
+      submit('https://main.d3uq86hhi34ytt.amplifyapp.com/send-email', values);
     },
     validationSchema: Yup.object({
       firstName: Yup.string().required('Required'),
