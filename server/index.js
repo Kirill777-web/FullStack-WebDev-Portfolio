@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
 });
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://main.d3uq86hhi34ytt.amplifyapp.com/',
   })
 );
 
