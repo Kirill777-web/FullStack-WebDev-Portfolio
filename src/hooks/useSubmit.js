@@ -18,11 +18,16 @@ const useSubmit = () => {
         message: res.data,
       });
     } catch (error) {
+      // Ensure the error message is a string
+      const errorMessage =
+        error.response && typeof error.response.data === 'object'
+          ? JSON.stringify(error.response.data)
+          : error.response
+          ? error.response.data
+          : 'Something went wrong, please try again later!';
       setResponse({
         type: 'error',
-        message: error.response
-          ? error.response.data
-          : 'Something went wrong, please try again later!',
+        message: errorMessage,
       });
     } finally {
       setLoading(false);
