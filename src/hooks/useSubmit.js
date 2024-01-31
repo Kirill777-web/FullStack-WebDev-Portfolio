@@ -5,10 +5,14 @@ const useSubmit = () => {
   const [isLoading, setLoading] = useState(false);
   const [response, setResponse] = useState(null);
 
-  const submit = async (url, data) => {
+  // Replace 'YOUR_LAMBDA_INVOKE_URL' with your actual Lambda function's URL
+  const LAMBDA_URL =
+    'https://9ymbixvnd6.execute-api.us-east-1.amazonaws.com/pro';
+
+  const submit = async (data) => {
     setLoading(true);
     try {
-      const res = await axios.post(url, data);
+      const res = await axios.post(LAMBDA_URL, data);
       setResponse({
         type: 'success',
         message: res.data,
