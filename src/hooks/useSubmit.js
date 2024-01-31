@@ -15,16 +15,15 @@ const useSubmit = () => {
       const res = await axios.post(LAMBDA_URL, data);
       setResponse({
         type: 'success',
-        message: res.data,
+        message: 'Email sent successfully',
       });
     } catch (error) {
-      // Ensure the error message is a string
-      const errorMessage =
-        error.response && typeof error.response.data === 'object'
-          ? JSON.stringify(error.response.data)
-          : error.response
-          ? error.response.data
-          : 'Something went wrong, please try again later!';
+      let errorMessage = 'Something went wrong, please try again later!';
+      if (error.response) {
+        errorMessage = error.response.data
+          ? error.response.data.message || JSON.stringify(error.response.data)
+          : errorMessage;
+      }
       setResponse({
         type: 'error',
         message: errorMessage,
@@ -36,5 +35,4 @@ const useSubmit = () => {
 
   return { isLoading, response, submit };
 };
-
 export default useSubmit;
