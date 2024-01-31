@@ -7,7 +7,7 @@ const useSubmit = () => {
 
   // Replace 'YOUR_LAMBDA_INVOKE_URL' with your actual Lambda function's URL
   const LAMBDA_URL =
-    'https://9ymbixvnd6.execute-api.us-east-1.amazonaws.com/pro';
+    'https://9ymbixvnd6.execute-api.us-east-1.amazonaws.com/prod';
 
   const submit = async (data) => {
     setLoading(true);
