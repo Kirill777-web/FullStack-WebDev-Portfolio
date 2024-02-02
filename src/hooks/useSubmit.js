@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
 //import dotenv from 'dotenv';
-require('dotenv').config();
 
 const useSubmit = () => {
   const [isLoading, setLoading] = useState(false);
