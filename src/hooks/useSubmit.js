@@ -8,27 +8,34 @@ const useSubmit = () => {
 
   const LAMBDA_URL = process.env.REACT_APP_LAMBDA_INVOKE_URL;
 
-  const submit = async (formData) => {
+  const submit = async (formData, resetForm) => {
     setLoading(true);
     try {
+      // Prepare the payload with email data
       const payload = {
         to: process.env.REACT_APP_TARGET_EMAIL,
-        subject: formData.subject || 'New Inquiry',
+        subject: 'New Inquiry from ' + formData.firstName,
         body: `Name: ${formData.firstName}\nEmail: ${formData.email}\nType: ${formData.type}\nComment: ${formData.comment}`,
       };
 
       const res = await axios.post(LAMBDA_URL, payload);
-      onOpen('success', 'Email sent successfully'); // Trigger success alert
-      setLoading(false);
-      return true; // Indicate success
+      setResponse({
+        type: 'success',
+        message: 'Email sent successfully',
+      });
+      resetForm(); // Reset form fields after successful submission
     } catch (error) {
-      const errorMessage =
-        error.response && error.response.data
-          ? error.response.data.message
-          : 'Something went wrong, please try again later!';
-      onOpen('error', errorMessage); // Trigger error alert
+      let errorMessage = 'Error occurred while sending email.';
+      if (error.response && error.response.data) {
+        errorMessage =
+          error.response.data.message || JSON.stringify(error.response.data);
+      }
+      setResponse({
+        type: 'error',
+        message: errorMessage,
+      });
+    } finally {
       setLoading(false);
-      return false; // Indicate failure
     }
   };
 

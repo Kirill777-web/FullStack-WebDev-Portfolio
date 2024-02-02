@@ -32,7 +32,7 @@ const ContactMeSection = () => {
       comment: '',
     },
     onSubmit: (values) => {
-      submit(values);
+      submit(values, formik.resetForm);
     },
     validationSchema: Yup.object({
       firstName: Yup.string().required('Required'),
