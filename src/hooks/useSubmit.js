@@ -5,7 +5,6 @@ import { useAlertContext } from '../context/alertContext';
 
 const useSubmit = () => {
   const [isLoading, setLoading] = useState(false);
-  const [response, setResponse] = useState(null);
   const { onOpen } = useAlertContext();
 
   const LAMBDA_URL = process.env.REACT_APP_LAMBDA_INVOKE_URL;
