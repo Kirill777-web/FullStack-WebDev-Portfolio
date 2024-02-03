@@ -7,8 +7,7 @@ const useSubmit = () => {
   const [isLoading, setLoading] = useState(false);
   const { onOpen } = useAlertContext();
 
-  const REACT_APP_LAMBDA_INVOKE_URL =
-    'https://wr1yqmnzo4.execute-api.us-east-1.amazonaws.com/prod/email';
+  const LAMBDA_URL = process.env.REACT_APP_LAMBDA_URL;
 
   const submit = async (formData, resetForm) => {
     setLoading(true);
@@ -18,18 +17,11 @@ const useSubmit = () => {
         subject: 'New Inquiry from ' + formData.firstName,
         body: `Name: ${formData.firstName}\nEmail: ${formData.email}\nType: ${formData.type}\nComment: ${formData.comment}`,
       };
-      console.log(
-        'Sending request to Lambda:',
-        REACT_APP_LAMBDA_INVOKE_URL,
-        payload
-      );
-      const res = await axios.post(REACT_APP_LAMBDA_INVOKE_URL, payload);
-      console.log('Response from Lambda:', res.data);
+      await axios.post(LAMBDA_URL, payload);
 
       onOpen('success', 'Email sent successfully');
       resetForm();
     } catch (error) {
-      console.error('Error in useSubmit:', error);
       let errorMessage = 'Error occurred while sending email.';
       if (error.response && error.response.data) {
         errorMessage =
