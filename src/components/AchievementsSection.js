@@ -19,7 +19,7 @@ const achievements = [
     description:
       'I am really excited to share that I have earned my AWS Certified Cloud Practitioner badge! This means I have got a solid grasp of the basics of AWS, from its main services to how to use them right. With this certification in my toolkit, I am all set to dive into AWS projects and make the most of the cloud. It is all part of my journey to keep up with the fast-paced world of cloud tech.',
     link: 'https://www.credly.com/badges/f123be6a-9a11-45b3-904a-27bdb1ffc25b',
-    linkText: 'Verified by Credly ✔',
+    linkText: 'Verified by Credly',
     imageUrl: awsCertifiedCloudPractitioner,
   },
   {
@@ -28,7 +28,7 @@ const achievements = [
     description:
       'As an Object Storage Specialist with a focus on AWS, I have honed my skills in managing and utilizing AWS S3, the industry-leading scalable object storage solution. My expertise encompasses setting up, securing, and optimizing S3 buckets to ensure high availability and cost-effectiveness. I am adept at implementing lifecycle policies, versioning, and cross-region replication to meet diverse data storage requirements.',
     link: 'https://www.credly.com/badges/3305b83e-049a-4cce-b27c-c4030e14c9af',
-    linkText: 'Verified by Credly ✔',
+    linkText: 'Verified by Credly',
     imageUrl: objectStorage,
   },
   {
@@ -37,7 +37,7 @@ const achievements = [
     description:
       ' Hey there! Just wanted to share some exciting news. I have wrapped up my IT-support Coursera certification with Google (yay!). This was not just about reading books; I dived deep into hands-on stuff—think building computers, setting up networks, and even delving into the world of Linux and Binary Code. So, if you have got tech troubles or just want to chat about the Command-Line Interface, I am your person!',
     link: 'https://www.credly.com/badges/5e9bc902-ff4c-4fc1-98ea-f714308346d2',
-    linkText: 'Verified by Credly ✔',
+    linkText: 'Verified by Credly',
     imageUrl: ITsupport,
   },
 ];
