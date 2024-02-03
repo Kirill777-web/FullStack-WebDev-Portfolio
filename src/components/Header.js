@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faAward, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { Box, HStack } from '@chakra-ui/react';
 
@@ -16,6 +16,10 @@ const socials = [
   {
     icon: faLinkedin,
     url: 'https://www.linkedin.com/in/kirill-lazutin-9b18a115b/',
+  },
+  {
+    icon: faAward,
+    url: 'https://www.credly.com/users/kirill-lazutin',
   },
 ];
 
