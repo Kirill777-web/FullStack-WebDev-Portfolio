@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import axios from 'axios';
-
 import { useAlertContext } from '../context/alertContext';
 
 const useSubmit = () => {
@@ -19,7 +18,6 @@ const useSubmit = () => {
       };
 
       await axios.post(LAMBDA_URL, payload);
-
       onOpen('success', 'Email sent successfully');
       resetForm();
     } catch (error) {
