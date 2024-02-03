@@ -7,7 +7,7 @@ const useSubmit = () => {
   const [isLoading, setLoading] = useState(false);
   const { onOpen } = useAlertContext();
 
-  const LAMBDA_URL = process.env.REACT_APP_LAMBDA_URL;
+  const LAMBDA_URL = process.env.REACT_APP_LAMBDA_INVOKE_URL;
 
   const submit = async (formData, resetForm) => {
     setLoading(true);
