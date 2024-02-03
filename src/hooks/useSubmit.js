@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+
 import { useAlertContext } from '../context/alertContext';
 
 const useSubmit = () => {
@@ -8,7 +9,7 @@ const useSubmit = () => {
 
   const LAMBDA_URL = process.env.REACT_APP_LAMBDA_INVOKE_URL;
 
-  const submit = async (formData) => {
+  const submit = async (formData, resetForm) => {
     setLoading(true);
     try {
       const payload = {
@@ -17,9 +18,15 @@ const useSubmit = () => {
         body: `Name: ${formData.firstName}\nEmail: ${formData.email}\nType: ${formData.type}\nComment: ${formData.comment}`,
       };
 
+      console.log('Sending request to Lambda:', LAMBDA_URL, payload);
+
       const res = await axios.post(LAMBDA_URL, payload);
+      console.log('Response from Lambda:', res.data);
+
       onOpen('success', 'Email sent successfully');
+      resetForm();
     } catch (error) {
+      console.error('Error in useSubmit:', error);
       let errorMessage = 'Error occurred while sending email.';
       if (error.response && error.response.data) {
         errorMessage =
