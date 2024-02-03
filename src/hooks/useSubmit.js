@@ -7,7 +7,8 @@ const useSubmit = () => {
   const [isLoading, setLoading] = useState(false);
   const { onOpen } = useAlertContext();
 
-  const LAMBDA_URL = process.env.REACT_APP_LAMBDA_INVOKE_URL;
+  const LAMBDA_URL =
+    'https://wr1yqmnzo4.execute-api.us-east-1.amazonaws.com/prod/email';
 
   const submit = async (formData, resetForm) => {
     setLoading(true);
