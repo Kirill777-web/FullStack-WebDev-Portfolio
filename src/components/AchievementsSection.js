@@ -4,6 +4,7 @@ import awsCertifiedCloudPractitioner from '../images/aws-certified-cloud-practit
 import objectStorage from '../images/Storage AWS CPC.png';
 import ITsupport from '../images/GCC_badge_IT_Support.png';
 import UNB from '../images/UNB.png';
+import GoogleDataAnalytics from '../images/google-data-analytics-professional-certificate..png';
 
 const achievements = [
   {
@@ -30,6 +31,15 @@ const achievements = [
     link: 'https://www.credly.com/badges/3305b83e-049a-4cce-b27c-c4030e14c9af',
     linkText: 'Verified by Credly',
     imageUrl: objectStorage,
+  },
+  {
+    title: 'Google Data Analytics Professional Certificate',
+    year: '2021',
+    description:
+      '  have completed the Google Data Analytics Professional Certificate, gaining key skills in data cleaning, analysis, and visualization with tools like SQL and Tableau. This course enabled me to develop practical, real-world data analytics expertise, preparing me for a data-driven professional environment.',
+    link: 'https://www.credly.com/badges/ad913b21-424b-4b21-87c9-37fb79719730',
+    linkText: 'Verified by Credly',
+    imageUrl: GoogleDataAnalytics,
   },
   {
     title: 'Google IT Support Coursera',
