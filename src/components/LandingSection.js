@@ -49,7 +49,7 @@ const LandingSection = () => (
           to='contact-section'
           smooth={true}
           duration={500}
-          colorScheme='blue'
+          colorScheme='purple'
           fontFamily='Montserrat, sans - serif'
           size='lg'
         >
