@@ -5,6 +5,7 @@ import objectStorage from '../images/Storage AWS CPC.png';
 import ITsupport from '../images/GCC_badge_IT_Support.png';
 import UNB from '../images/UNB.png';
 import GoogleDataAnalytics from '../images/google-data-analytics-professional-certificate..png';
+import WES from '../images/verified-international-academic-qualifications.1.png';
 
 const achievements = [
   {
@@ -49,6 +50,15 @@ const achievements = [
     link: 'https://www.credly.com/badges/5e9bc902-ff4c-4fc1-98ea-f714308346d2',
     linkText: 'Verified by Credly',
     imageUrl: ITsupport,
+  },
+  {
+    title: 'WES Verified International Academic Qualifications',
+    year: '2020',
+    description:
+      ' This badge: Indicates that World Education Services (WES) has evaluated the associated credential on behalf of the holder. Verifies the authenticity of the claimed credential. Provides assurance that the awarding institution and/or program was accredited at the point that the credential was issued Indicates that the associated credential has been assessed for its Canadian equivalency.',
+    link: 'https://www.credly.com/badges/7dbc8f59-9540-4b26-b7f2-c246295ea5d1',
+    linkText: 'Verified by Credly',
+    imageUrl: WES,
   },
 ];
 const AchievementsComponent = () => {
