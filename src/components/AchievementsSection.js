@@ -1,5 +1,7 @@
 import { VStack, Box, Heading, Text, Image, HStack } from '@chakra-ui/react';
 import FullScreenSection from './FullScreenSection';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import awsCertifiedCloudPractitioner from '../images/aws-certified-cloud-practitioner.png';
 import objectStorage from '../images/Storage AWS CPC.png';
 import ITsupport from '../images/GCC_badge_IT_Support.png';
@@ -23,6 +25,7 @@ const achievements = [
     link: 'https://www.credly.com/badges/f123be6a-9a11-45b3-904a-27bdb1ffc25b',
     linkText: 'Verified by Credly',
     imageUrl: awsCertifiedCloudPractitioner,
+    verified: true,
   },
   {
     title: 'Object Storage Specialized',
@@ -32,6 +35,7 @@ const achievements = [
     link: 'https://www.credly.com/badges/3305b83e-049a-4cce-b27c-c4030e14c9af',
     linkText: 'Verified by Credly',
     imageUrl: objectStorage,
+    verified: true,
   },
   {
     title: 'Google Data Analytics Professional Certificate',
@@ -41,6 +45,7 @@ const achievements = [
     link: 'https://www.credly.com/badges/ad913b21-424b-4b21-87c9-37fb79719730',
     linkText: 'Verified by Credly',
     imageUrl: GoogleDataAnalytics,
+    verified: true,
   },
   {
     title: 'Google IT Support Coursera',
@@ -50,6 +55,7 @@ const achievements = [
     link: 'https://www.credly.com/badges/5e9bc902-ff4c-4fc1-98ea-f714308346d2',
     linkText: 'Verified by Credly',
     imageUrl: ITsupport,
+    verified: true,
   },
   {
     title: 'WES Verified International Academic Qualifications',
@@ -59,6 +65,7 @@ const achievements = [
     link: 'https://www.credly.com/badges/7dbc8f59-9540-4b26-b7f2-c246295ea5d1',
     linkText: 'Verified by Credly',
     imageUrl: WES,
+    verified: true,
   },
 ];
 const AchievementsComponent = () => {
@@ -98,6 +105,13 @@ const AchievementsComponent = () => {
                     target='_blank'
                     rel='noopener noreferrer'
                   >
+                    {achievement.verified && (
+                      <FontAwesomeIcon
+                        icon={faCheckCircle}
+                        color='orange'
+                        style={{ marginRight: '5px' }}
+                      />
+                    )}
                     {achievement.linkText}
                   </a>
                 </VStack>
