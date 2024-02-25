@@ -53,6 +53,13 @@ const projects = [
     getImageSrc: () => require('../images/home-page.png'),
     url: 'https://github.com/Kirill777-web/little-Lemon-app',
   },
+  {
+    title: 'Portfolio React SPA',
+    description:
+      "PortfolioWebDev is a personal portfolio website, built using React, showcasing web development projects and skills. It's designed as a single-page application (SPA) and highlights proficiency in front-end technologies, including extensive use of React, and experience with AWS cloud solutions. The portfolio features a modern, responsive design for an optimal user experience on various devices.",
+    getImageSrc: () => require('../images/portfoliowebdev(SPA).png'),
+    url: 'https://github.com/Kirill777-web/PortfolioWebDev',
+  },
 ];
 
 const ProjectsSection = () => {
