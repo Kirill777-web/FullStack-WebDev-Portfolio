@@ -46,6 +46,13 @@ const projects = [
     getImageSrc: () => require('../images/3.png'),
     url: 'https://github.com/Kirill777-web/sales_dashboard',
   },
+  {
+    title: 'Little Lemon',
+    description:
+      'Little Lemon is a restaurant application designed to provide users with an exceptional dining experience through a user-friendly interface. The app allows users to browse the menu, make online reservations, and order food for delivery or pickup. Skills: HTML, CSS, JavaScript, API, Node.js, React, Netlify, GitHub.',
+    getImageSrc: () => require('../images/home-page.png'),
+    url: 'https://github.com/Kirill777-web/little-Lemon-app',
+  },
 ];
 
 const ProjectsSection = () => {
