@@ -60,6 +60,13 @@ const projects = [
     getImageSrc: () => require('../images/portfoliowebdev(SPA).png'),
     url: 'https://github.com/Kirill777-web/PortfolioWebDev',
   },
+  {
+    title: 'Management App',
+    description:
+      "The Employee Management System is a web application designed to help organizations manage their employees efficiently. It allows for easy tracking of employee information, departmental data, and facilitates communication through email functionality. This project is particularly useful for HR departments and team leaders looking to streamline their operations. While the project is still in development, it showcases the potential for significant productivity improvements within any organizational structure.",
+    getImageSrc: () => require('../images/employeespage.png'),
+    url: 'https://github.com/Kirill777-web/employee-management-web-app',
+  },
 ];
 
 const ProjectsSection = () => {
