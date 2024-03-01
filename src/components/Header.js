@@ -104,6 +104,9 @@ const Header = () => {
               <a href='#achievements' onClick={handleClick('achievements')}>
                 Achievements
               </a>
+              <a href='#skills' onClick={handleClick('skills')}>
+                Skills
+              </a>
               <a href='#projects' onClick={handleClick('projects')}>
                 Projects
               </a>
