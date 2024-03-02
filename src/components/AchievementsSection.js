@@ -7,9 +7,16 @@ import objectStorage from '../images/Storage AWS CPC.png';
 import ITsupport from '../images/GCC_badge_IT_Support.png';
 import UNB from '../images/UNB.png';
 import GoogleDataAnalytics from '../images/google-data-analytics-professional-certificate..png';
-import WES from '../images/verified-international-academic-qualifications.1.png';
+import Meta from '../images/meta-front-end-developer-certificate.png';
 
 const achievements = [
+  {
+    title: 'Meta Front-End Developer',
+    year: '2024',
+    description:
+      'I earned the Meta Front-End Developer Professional Certificate, a detailed program aimed at equipping emerging developers with crucial skills for contemporary front-end development. The course provided an in-depth exploration of HTML, CSS, and JavaScript, the foundational elements of web development, and introduced me to React for crafting dynamic user interfaces. Additionally, it covered UI/UX Design and Accessibility, preparing me to create web applications that are not only aesthetically pleasing but also accessible. Skills acquired include React, UI/UX Design, and Accessibility.',
+    imageUrl: Meta,
+  },
   {
     title: 'WebDeveloper Bootcamp UNB',
     year: '2024',
