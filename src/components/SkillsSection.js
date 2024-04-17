@@ -14,13 +14,13 @@ const categorizedSkills = {
   ],
   Backend: [
     { name: 'Node.js', icon: FaNodeJs, description: 'Built RESTful APIs using Express, handling database operations, authentication, and logging.' },
-    { name: 'Express.js', icon: SiExpress, description: 'Developed server-side logic and APIs using Express framework.' }
-    // { name: 'Python', icon: FaPython, description: 'Scripted efficient, reusable, and modular code in Python for various backend tasks.' },
-    // { name: 'Django', icon: SiDjango, description: 'Developed robust web applications with Django, focusing on rapid development and clean, pragmatic design.' }
+    { name: 'Express.js', icon: SiExpress, description: 'Developed server-side logic and APIs using Express framework.' },
+    { name: 'Python', icon: FaPython, description: 'Scripted efficient, reusable, and modular code in Python for various backend tasks.' },
+    { name: 'Django', icon: SiDjango, description: 'Developed robust web applications with Django, focusing on rapid development and clean, pragmatic design.' }
   ],
   CloudServices: [
     { name: 'AWS', icon: FaAws, description: 'Deployed and managed applications using EC2, S3, Lambda, and RDS for a scalable cloud architecture.' },
-    { name: 'Docker', icon: FaDocker, description: 'Containerized applications using Docker for consistent development, delivery, and deployment.' }
+    // { name: 'Docker', icon: FaDocker, description: 'Containerized applications using Docker for consistent development, delivery, and deployment.' }
   ],
   Databases: [
     { name: 'MongoDB', icon: SiMongodb, description: 'Utilized MongoDB for storing and querying data efficiently in JSON-like documents.' },
