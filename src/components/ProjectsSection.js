@@ -67,6 +67,13 @@ const projects = [
     getImageSrc: () => require('../images/employeespage.png'),
     url: 'https://github.com/Kirill777-web/employee-management-web-app',
   },
+  {
+    title: 'Blog-tech',
+    description:
+      "Blog-tech is a simple and efficient blogging application built using Python and Django, and it integrates with AWS RDS MySQL for database management. This application allows users to register, log in, create, update, and remove blog posts. It is designed to provide a seamless user experience for blogging enthusiasts who need a straightforward platform for their writing needs.",
+    getImageSrc: () => require('../images/main.png'),
+    url: 'https://github.com/Kirill777-web/blog-app',
+  },
 ];
 
 const ProjectsSection = () => {
