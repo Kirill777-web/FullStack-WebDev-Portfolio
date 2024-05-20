@@ -74,6 +74,13 @@ const projects = [
     getImageSrc: () => require('../images/main_page.png'),
     url: 'https://github.com/Kirill777-web/blog-app',
   },
+  {
+    title: 'Little Lemon API',
+    description:
+      "The Little Lemon API is a RESTful web service built with Django and Django REST Framework. This API serves as the backend for the Little Lemon application, providing endpoints for managing menu items, categories, orders, and user roles. It is designed to support various user roles including admins, managers, delivery crew, and customers, each with specific functionalities and permissions.",
+    getImageSrc: () => require('../images/LittleLemonDRF.png'),
+    url: 'https://github.com/Kirill777-web/Little-Lemon-API-DRF',
+  },
 ];
 
 const ProjectsSection = () => {
