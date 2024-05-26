@@ -81,6 +81,13 @@ const projects = [
     getImageSrc: () => require('../images/LittleLemonDRF.png'),
     url: 'https://github.com/Kirill777-web/Little-Lemon-API-DRF',
   },
+  {
+    title: 'Little Lemon Django and PostgreSQL',
+    description:
+      "Little Lemon is a restaurant application designed to provide users with an exceptional dining experience through a user-friendly interface. The app allows users to browse the menu, make online reservations, and order food for delivery or pickup. The backend is powered by Django and PostgreSQL, and it includes features such as dynamic rendering of menu items and form submission with validation.Skills demonstrated include Django, JavaScript, HTML, CSS, API integration, PostgreSQL, and deployment on Heroku.",
+    getImageSrc: () => require('../images/LittleLemon_MainPage.png'),
+    url: 'https://github.com/Kirill777-web/little-lemon',
+  },
 ];
 
 const ProjectsSection = () => {
