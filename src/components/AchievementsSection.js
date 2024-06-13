@@ -6,15 +6,21 @@ import awsCertifiedCloudPractitioner from '../images/aws-certified-cloud-practit
 import objectStorage from '../images/Storage AWS CPC.png';
 import ITsupport from '../images/GCC_badge_IT_Support.png';
 import UNB from '../images/UNB.png';
-import GoogleDataAnalytics from '../images/google-data-analytics-professional-certificate..png';
-import Meta from '../images/meta-front-end-developer-certificate.png';
+import Meta from '../images/meta-full-stack-software-engineer.png';
 
 const achievements = [
   {
-    title: 'Meta Front-End Developer',
+    title: 'Meta Full-Stack Software Engineer',
     year: '2024',
-    description:
-      'I earned the Meta Front-End Developer Professional Certificate, a detailed program aimed at equipping emerging developers with crucial skills for contemporary front-end development. The course provided an in-depth exploration of HTML, CSS, and JavaScript, the foundational elements of web development, and introduced me to React for crafting dynamic user interfaces. Additionally, it covered UI/UX Design and Accessibility, preparing me to create web applications that are not only aesthetically pleasing but also accessible. Skills acquired include React, UI/UX Design, and Accessibility.',
+    description: `
+    I hold the Meta Full-Stack Software Engineer Certificate, which has equipped me with key skills in both front-end and back-end web development. My training covered technologies such as HTML, CSS, JavaScript, React.js, Django, and Python. It also included important concepts in UI/UX design, accessibility, database management, API integration, cloud hosting, and version control.
+
+    This comprehensive education allows me to create dynamic, responsive, and accessible web applications. I'm proficient in:
+    - **Front-End Development:** Using HTML, CSS, JavaScript, and React.js.
+    - **Back-End Development:** Building robust server-side applications with Python and Django.
+    - **Full-Stack Integration:** Combining front-end and back-end technologies to deliver complete web solutions.
+
+    My skills ensure the delivery of high-quality, scalable, and secure web applications tailored to meet diverse needs.`,
     imageUrl: Meta,
   },
   {
@@ -42,16 +48,6 @@ const achievements = [
     link: 'https://www.credly.com/badges/3305b83e-049a-4cce-b27c-c4030e14c9af',
     linkText: 'Verified by Credly',
     imageUrl: objectStorage,
-    verified: true,
-  },
-  {
-    title: 'Google Data Analytics Professional Certificate',
-    year: '2021',
-    description:
-      '  have completed the Google Data Analytics Professional Certificate, gaining key skills in data cleaning, analysis, and visualization with tools like SQL and Tableau. This course enabled me to develop practical, real-world data analytics expertise, preparing me for a data-driven professional environment.',
-    link: 'https://www.credly.com/badges/ad913b21-424b-4b21-87c9-37fb79719730',
-    linkText: 'Verified by Credly',
-    imageUrl: GoogleDataAnalytics,
     verified: true,
   },
   {
