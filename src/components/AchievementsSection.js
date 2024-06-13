@@ -6,7 +6,7 @@ import awsCertifiedCloudPractitioner from '../images/aws-certified-cloud-practit
 import objectStorage from '../images/Storage AWS CPC.png';
 import ITsupport from '../images/GCC_badge_IT_Support.png';
 import UNB from '../images/UNB.png';
-import Meta from '../images/meta-full-stack-software-engineer.png';
+import Meta from '../images/meta-full-stack-engineer-certificate.png';
 
 const achievements = [
   {
