@@ -88,6 +88,13 @@ const projects = [
     getImageSrc: () => require('../images/LittleLemon_MainPage.png'),
     url: 'https://github.com/Kirill777-web/little-lemon',
   },
+  {
+    title: 'KI-Expense Tracker',
+    description:
+      "KI-ExpenseTracker is a comprehensive expense tracking web application designed for the book distribution company, Rumi Press. This application allows users to track their income and expenses, categorize their financial data, and visualize their spending habits through various charts and reports. Built with Django, Python, and Bootstrap, the app ensures a user-friendly and responsive design. Key skills used include Django, Python, HTML, CSS, JavaScript, Chart.js,for the front end, and MySQL for database management Heroku for deployment.",
+    getImageSrc: () => require('../images/dashboard.png'),
+    url: 'https://github.com/Kirill777-web/RumiExpenseTracker',
+  },
 ];
 
 const ProjectsSection = () => {
