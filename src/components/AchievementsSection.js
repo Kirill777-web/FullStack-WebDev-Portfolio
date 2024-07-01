@@ -7,8 +7,16 @@ import objectStorage from '../images/Storage AWS CPC.png';
 import ITsupport from '../images/GCC_badge_IT_Support.png';
 import UNB from '../images/UNB.png';
 import Meta from '../images/meta-full-stack-engineer-certificate.png';
+import Python from '../images/pcep-30-02-pcep-certified-entry-level-python-programmer.png';
 
 const achievements = [
+  {
+    title: '[PCEP-30-02] PCEP™-Certified Entry-Level Python Programmer',
+    year: '2024',
+    description:
+      'I have earned the PCEP™ certification, demonstrating my foundational understanding of Python programming. This certification confirms my proficiency in essential Python concepts, including syntax and semantics, control flow mechanisms, data collections, and function operations. Additionally, it validates my ability to handle exceptions and perform I/O operations, showcasing a well-rounded grasp of Python programming fundamentals. This certification serves as a testament to my commitment to continuous learning and professional development in the field of software engineering.',
+    imageUrl: Python,
+  },
   {
     title: 'Meta Full-Stack Software Engineer',
     year: '2024',
