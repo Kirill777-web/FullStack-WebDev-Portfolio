@@ -9,8 +9,8 @@ import UNB from '../images/UNB.png';
 import Meta from '../images/meta-full-stack-engineer-certificate.png';
 import Python from '../images/pcep-30-02-pcep-certified-entry-level-python-programmer.png';
 import CompTIASecurityPlus from "../images/CompTIASecurityPlus.png";
-import CompTIASecurityPlus from "../images/CompTIAAlus.png";
-import CompTIASecurityPlus from "../images/CompTIANetworkPlus.png";
+import CompTIAAPlus from "../images/CompTIAAlus.png";
+import CompTIANetworkPlus from "../images/CompTIANetworkPlus.png";
 
 const achievements = [
   {
