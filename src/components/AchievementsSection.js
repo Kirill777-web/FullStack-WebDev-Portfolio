@@ -15,29 +15,29 @@ import CompTIANetworkPlus from "../images/CompTIANetworkPlus.png";
 const achievements = [
   {
   title: 'CompTIA Security+',
-  year: '2024',
+  year: '2025',
   description:
     'I have earned the CompTIA Security+ certification, which demonstrates my understanding of cybersecurity principles, risk management, and system security. This credential confirms my ability to secure networks, detect threats, and implement best practices for information security, reflecting my dedication to professional development in cybersecurity.',
   organization: 'CompTIA',
-  imageUrl: CompTIASecurityPlus, // replace with your badge image variable
+  imageUrl: CompTIASecurityPlus,
   verified: true,
 },
   {
   title: 'CompTIA Network+',
-  year: '2024',
+  year: '2025',
   description:
     'I have earned the CompTIA Network+ certification, validating my knowledge of networking concepts, including network design, configuration, management, and troubleshooting. This certification demonstrates my ability to manage wired and wireless networks securely and effectively, confirming my proficiency in network fundamentals.',
   organization: 'CompTIA',
-  imageUrl: CompTIANetworkPlus, // replace with your badge image variable
+  imageUrl: CompTIANetworkPlus,
   verified: true,
 },
   {
   title: 'CompTIA A+',
-  year: '2024',
+  year: '2025',
   description:
     'I have earned the CompTIA A+ certification, which demonstrates my foundational skills in IT support, hardware, software, and troubleshooting. This certification confirms my ability to install, configure, and maintain computer systems, as well as handle technical issues efficiently. It highlights my commitment to strong IT fundamentals and problem-solving skills.',
   organization: 'CompTIA',
-  imageUrl: CompTIAAPlus, // replace with your badge image variable
+  imageUrl: CompTIAAPlus,
   verified: true,
 },
   {
