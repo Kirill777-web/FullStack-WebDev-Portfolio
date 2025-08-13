@@ -1,11 +1,17 @@
 import React from 'react';
 import { Box, VStack, Heading, Text, Flex, Icon, Center } from '@chakra-ui/react';
+
+// Frontend / Backend / Cloud / Database / Version Control
 import { FaReact, FaNodeJs, FaAws, FaDatabase, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt } from 'react-icons/fa';
-import { FaShieldAlt, FaLock, FaCertificate, FaLinux, FaServer, FaExclamationTriangle } from 'react-icons/fa';
-import { SiKali, SiOpenvas, SiNessus } from 'react-icons/si';
-import { SiDjango, SiMongodb, SiMysql, SiFigma, SiExpress } from 'react-icons/si';
+import { SiDjango, SiMongodb, SiMysql, SiFigma, SiExpress, SiKali, SiNmap } from 'react-icons/si';
 import { DiJavascript1 } from 'react-icons/di';
+
+// Cybersecurity icons
+import { FaShieldAlt, FaLock, FaCertificate, FaLinux, FaServer, FaExclamationTriangle } from 'react-icons/fa';
+
+// FullScreenSection wrapper
 import FullScreenSection from './FullScreenSection';
+
 
 const categorizedSkills = {
   Cybersecurity: [
@@ -17,8 +23,8 @@ const categorizedSkills = {
     { name: 'Kali Linux', icon: SiKali, description: 'Utilized Kali Linux tools for penetration testing, vulnerability assessment, and security research.' },
     { name: 'OWASP Top 10', icon: FaExclamationTriangle, description: 'Awareness of the top web application security risks and mitigations.' },
     { name: 'SIEM', icon: FaServer, description: 'Experience with Security Information and Event Management systems for monitoring and incident response.' },
-    { name: 'OpenVAS', icon: SiOpenvas, description: 'Conducted vulnerability scanning and assessment using OpenVAS.' },
-    { name: 'Nessus', icon: SiNessus, description: 'Performed vulnerability scanning with Nessus to identify system weaknesses.' },
+    { name: 'OpenVAS', icon: FaCertificate, description: 'Conducted vulnerability scanning and assessment using OpenVAS.' },
+    { name: 'Nessus', icon: FaCertificate, description: 'Performed vulnerability scanning with Nessus to identify system weaknesses.' },
     { name: 'Linux', icon: FaLinux, description: 'Administered Linux systems and secured servers in cybersecurity tasks.' }
   ],
   Frontend: [
