@@ -49,16 +49,6 @@ const achievements = [
     verified: true,
   },
   {
-    title: 'Object Storage Specialized',
-    year: '2023',
-    description:
-      'As an Object Storage Specialist with a focus on AWS, I have honed my skills in managing and utilizing AWS S3, the industry-leading scalable object storage solution. My expertise encompasses setting up, securing, and optimizing S3 buckets to ensure high availability and cost-effectiveness. I am adept at implementing lifecycle policies, versioning, and cross-region replication to meet diverse data storage requirements.',
-    link: 'https://www.credly.com/badges/3305b83e-049a-4cce-b27c-c4030e14c9af',
-    linkText: 'Verified by Credly',
-    imageUrl: objectStorage,
-    verified: true,
-  },
-  {
     title: 'Google IT Support Coursera',
     year: '2020',
     description:
