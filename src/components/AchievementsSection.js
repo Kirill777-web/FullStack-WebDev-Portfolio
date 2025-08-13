@@ -11,11 +11,39 @@ import Python from '../images/pcep-30-02-pcep-certified-entry-level-python-progr
 
 const achievements = [
   {
+  title: 'CompTIA Security+',
+  year: '2024',
+  description:
+    'I have earned the CompTIA Security+ certification, which demonstrates my understanding of cybersecurity principles, risk management, and system security. This credential confirms my ability to secure networks, detect threats, and implement best practices for information security, reflecting my dedication to professional development in cybersecurity.',
+  organization: 'CompTIA',
+  imageUrl: CompTIASecurityPlus, // replace with your badge image variable
+  verified: true,
+},
+  {
+  title: 'CompTIA Network+',
+  year: '2024',
+  description:
+    'I have earned the CompTIA Network+ certification, validating my knowledge of networking concepts, including network design, configuration, management, and troubleshooting. This certification demonstrates my ability to manage wired and wireless networks securely and effectively, confirming my proficiency in network fundamentals.',
+  organization: 'CompTIA',
+  imageUrl: CompTIANetworkPlus, // replace with your badge image variable
+  verified: true,
+},
+  {
+  title: 'CompTIA A+',
+  year: '2024',
+  description:
+    'I have earned the CompTIA A+ certification, which demonstrates my foundational skills in IT support, hardware, software, and troubleshooting. This certification confirms my ability to install, configure, and maintain computer systems, as well as handle technical issues efficiently. It highlights my commitment to strong IT fundamentals and problem-solving skills.',
+  organization: 'CompTIA',
+  imageUrl: CompTIAAPlus, // replace with your badge image variable
+  verified: true,
+},
+  {
     title: '[PCEP-30-02] PCEP™-Certified Entry-Level Python Programmer',
     year: '2024',
     description:
       'I have earned the PCEP™ certification, demonstrating my foundational understanding of Python programming. This certification confirms my proficiency in essential Python concepts, including syntax and semantics, control flow mechanisms, data collections, and function operations. Additionally, it validates my ability to handle exceptions and perform I/O operations, showcasing a well-rounded grasp of Python programming fundamentals. This certification serves as a testament to my commitment to continuous learning and professional development in the field of software engineering.',
     imageUrl: Python,
+    verified: true,
   },
   {
     title: 'Meta Full-Stack Software Engineer',
@@ -30,6 +58,7 @@ const achievements = [
 
     My skills ensure the delivery of high-quality, scalable, and secure web applications tailored to meet diverse needs.`,
     imageUrl: Meta,
+    verified: true,
   },
   {
     title: 'WebDeveloper Bootcamp UNB',
