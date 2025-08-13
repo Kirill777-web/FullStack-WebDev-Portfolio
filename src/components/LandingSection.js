@@ -6,8 +6,8 @@ import { Button } from '@chakra-ui/react';
 import { Link } from 'react-scroll';
 
 const greeting = 'Hello, I am Kirill!';
-const bio1 = 'Web Developer & Certified AWS';
-const bio2 = "Practitioner - Let's Build Something Fun";
+const bio1 = 'Certified Cybersecurity Specialist | Full-Stack Developer';
+const bio2 = "Protecting Systems & Securing Networks – Let's Build Something Safe!";
 
 const LandingSection = () => (
   <FullScreenSection
