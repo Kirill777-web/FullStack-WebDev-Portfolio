@@ -1,20 +1,33 @@
 import React from 'react';
 import { Box, VStack, Heading, Text, Flex, Icon, Center } from '@chakra-ui/react';
 import { FaReact, FaNodeJs, FaAws, FaDatabase, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt } from 'react-icons/fa';
+import { FaShieldAlt, FaLock, FaCertificate, FaLinux, FaServer, FaExclamationTriangle } from 'react-icons/fa';
+import { SiKali, SiOpenvas, SiNessus } from 'react-icons/si';
 import { SiDjango, SiMongodb, SiMysql, SiFigma, SiExpress } from 'react-icons/si';
 import { DiJavascript1 } from 'react-icons/di';
 import FullScreenSection from './FullScreenSection';
 
 const categorizedSkills = {
+  Cybersecurity: [
+    { name: 'Wireshark', icon: FaShieldAlt, description: 'Analyzed network traffic and performed protocol analysis to detect anomalies.' },
+    { name: 'Metasploit', icon: FaLock, description: 'Executed penetration tests and vulnerability assessments using Metasploit framework.' },
+    { name: 'Burp Suite', icon: FaLock, description: 'Performed web application security testing including scanning, intrusions, and request interception.' },
+    { name: 'John The Ripper', icon: FaLock, description: 'Cracked password hashes for security testing and auditing purposes.' },
+    { name: 'Hashcat', icon: FaLock, description: 'Used GPU-accelerated password cracking for auditing password strength.' },
+    { name: 'Kali Linux', icon: SiKali, description: 'Utilized Kali Linux tools for penetration testing, vulnerability assessment, and security research.' },
+    { name: 'OWASP Top 10', icon: FaExclamationTriangle, description: 'Awareness of the top web application security risks and mitigations.' },
+    { name: 'SIEM', icon: FaServer, description: 'Experience with Security Information and Event Management systems for monitoring and incident response.' },
+    { name: 'OpenVAS', icon: SiOpenvas, description: 'Conducted vulnerability scanning and assessment using OpenVAS.' },
+    { name: 'Nessus', icon: SiNessus, description: 'Performed vulnerability scanning with Nessus to identify system weaknesses.' },
+    { name: 'Linux', icon: FaLinux, description: 'Administered Linux systems and secured servers in cybersecurity tasks.' }
+  ],
   Frontend: [
     { name: 'HTML/CSS', icon: FaHtml5, description: 'Crafted responsive and visually appealing websites using HTML5 and CSS3.' },
     { name: 'JavaScript', icon: DiJavascript1, description: 'Developed interactive web applications utilizing modern JavaScript ES6+.' },
     { name: 'React', icon: FaReact, description: 'Developed SPA with React, including state management with Redux and UIs with Material-UI.' },
-    { name: 'Figma', icon: SiFigma, description: 'Designed UI/UX layouts and prototypes for web applications.' }
   ],
   Backend: [
     { name: 'Node.js', icon: FaNodeJs, description: 'Built RESTful APIs using Express, handling database operations, authentication, and logging.' },
-    { name: 'Express.js', icon: SiExpress, description: 'Developed server-side logic and APIs using Express framework.' },
     { name: 'Python', icon: FaPython, description: 'Scripted efficient, reusable, and modular code in Python for various backend tasks.' },
     { name: 'Django', icon: SiDjango, description: 'Developed robust web applications with Django, focusing on rapid development and clean, pragmatic design.' }
   ],
