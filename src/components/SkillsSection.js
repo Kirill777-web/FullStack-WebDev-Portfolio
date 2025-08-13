@@ -26,8 +26,7 @@ const categorizedSkills = {
   { name: 'OpenVAS', icon: FaCertificate, description: 'Conducted vulnerability scanning and assessment.' },
   { name: 'Nessus', icon: FaCertificate, description: 'Performed vulnerability scanning to identify system weaknesses.' },
   { name: 'Linux', icon: FaLinux, description: 'Administered Linux systems and secured servers in cybersecurity tasks.' }
-]
-
+],
   Frontend: [
     { name: 'HTML/CSS', icon: FaHtml5, description: 'Crafted responsive and visually appealing websites using HTML5 and CSS3.' },
     { name: 'JavaScript', icon: DiJavascript1, description: 'Developed interactive web applications utilizing modern JavaScript ES6+.' },
