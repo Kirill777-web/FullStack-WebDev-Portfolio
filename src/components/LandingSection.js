@@ -45,6 +45,15 @@ const LandingSection = () => (
         >
           {bio2}
         </Heading>
+        {/* Insert TryHackMe Badge */}
+        <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+          <iframe
+            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3519444"
+            style={{ border: 'none', width: '400px', height: '200px' }}
+            title="TryHackMe Badge"
+          ></iframe>
+        </div>
+            
         <Button
           as={Link}
           to='contact-section'
