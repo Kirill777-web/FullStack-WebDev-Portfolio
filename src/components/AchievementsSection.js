@@ -13,6 +13,7 @@ import CompTIAAPlus from "../images/CompTIAAPlus.png";
 import CompTIANetworkPlus from "../images/CompTIANetworkPlus.png";
 import Diploma_SMC from "../images/Diploma_SMC.png";
 import EC_Council from "../images/CEH_certificate_of_course_complition.png";
+import CTF from "../images/CTF.png";
 
 const achievements = [
   {
@@ -29,6 +30,14 @@ const achievements = [
   description:
     'Completed the official EC-Council Certified Ethical Hacker (CEH) training program, gaining hands-on experience in offensive security methodologies, reconnaissance, network scanning, vulnerability analysis, and system exploitation. Utilizing this offensive mindset to strengthen defensive capabilities, identify attack patterns in SIEM logs, and enhance incident response as I prepare for the final certification exam.',
   imageUrl: EC_Council,
+  verified: true,
+},
+  {
+  title: 'Offensive Security: Network Vulnerability Assessment (CTF)',
+  year: 'Cisco U. | 2025',
+  description:
+    'Earned the official Cisco U. Capture The Flag (CTF) credential by conducting offensive network reconnaissance and vulnerability scanning in a simulated environment. Identified exposed services, analyzed open ports and misconfigurations with Nmap tool, and mapped potential attack vectors using Nmap and Kali Linux.',
+  imageUrl: CTF,
   verified: true,
 },
   {
