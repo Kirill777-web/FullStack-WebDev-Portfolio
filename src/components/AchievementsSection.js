@@ -12,7 +12,7 @@ import CompTIASecurityPlus from "../images/CompTIASecurityPlus.png";
 import CompTIAAPlus from "../images/CompTIAAPlus.png";
 import CompTIANetworkPlus from "../images/CompTIANetworkPlus.png";
 import Diploma_SMC from "../images/Diploma_SMC.png";
-import EC_Council from "../images/CEH_certificate_of _course_complition.png";
+import EC_Council from "../images/CEH_certificate_of_course_complition.png";
 
 const achievements = [
   {
