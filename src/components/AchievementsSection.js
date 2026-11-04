@@ -55,9 +55,9 @@ const achievements = [
     I hold the Meta Full-Stack Software Engineer Certificate, which has equipped me with key skills in both front-end and back-end web development. My training covered technologies such as HTML, CSS, JavaScript, React.js, Django, and Python. It also included important concepts in UI/UX design, accessibility, database management, API integration, cloud hosting, and version control.
 
     This comprehensive education allows me to create dynamic, responsive, and accessible web applications. I'm proficient in:
-    - **Front-End Development:** Using HTML, CSS, JavaScript, and React.js.
-    - **Back-End Development:** Building robust server-side applications with Python and Django.
-    - **Full-Stack Integration:** Combining front-end and back-end technologies to deliver complete web solutions.
+    - Front-End Development: Using HTML, CSS, JavaScript, and React.js.
+    - Back-End Development: Building robust server-side applications with Python and Django.
+    - Full-Stack Integration: Combining front-end and back-end technologies to deliver complete web solutions.
 
     My skills ensure the delivery of high-quality, scalable, and secure web applications tailored to meet diverse needs.`,
     imageUrl: Meta,
@@ -84,7 +84,7 @@ const achievements = [
     title: 'Google IT Support Coursera',
     year: '2020',
     description:
-      ' Hey there! Just wanted to share some exciting news. I have wrapped up my IT-support Coursera certification with Google (yay!). This was not just about reading books; I dived deep into hands-on stuff—think building computers, setting up networks, and even delving into the world of Linux and Binary Code. So, if you have got tech troubles or just want to chat about the Command-Line Interface, I am your person!',
+      'Completed the Google IT Support Professional Certificate, building a solid foundation in computer networking, operating systems (Linux/Windows), system administration, and enterprise troubleshooting.',
     link: 'https://www.credly.com/badges/5e9bc902-ff4c-4fc1-98ea-f714308346d2',
     linkText: 'Verified by Credly',
     imageUrl: ITsupport,
