@@ -5,7 +5,7 @@ import myImage from '../images/me.jpg';
 import { Button } from '@chakra-ui/react';
 import { Link } from 'react-scroll';
 
-const greeting = 'Hello, I am Kirill!';
+const greeting = 'Hello, I am Kirill';
 const bio1 = 'Certified Cybersecurity Specialist | SOC & Blue Team';
 const bio2 = 'SIEM Monitoring, Threat Detection & Incident Response';
 
