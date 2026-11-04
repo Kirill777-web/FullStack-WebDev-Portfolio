@@ -29,7 +29,7 @@ const projects = [
     title: 'Enterprise SOC Simulation Lab (Splunk & Sysmon)',
     description:
       'Deployed a centralized logging architecture using Splunk Enterprise on Ubuntu to monitor Windows endpoints. Executed Red Team attack scenarios (Hydra brute-force, Nmap reconnaissance) from Kali Linux against target machines, and configured Sysmon for granular event logging with custom Splunk dashboards to visualize and alert on anomalous activity in real time. Skills: Splunk Enterprise, Sysmon, SIEM, Threat Detection, Log Analysis, Kali Linux, Ubuntu, Windows Server.',
-    getImageSrc: () => require('../images/Splunk.png'),
+    getImageSrc: () => require('../images/Splunk.jpg'),
     url: 'https://lnkd.in/p/gCbuqeJe',
   },
   {
