@@ -1,52 +1,46 @@
 import React from 'react';
 import { Box, VStack, Heading, Text, Flex, Icon, Center } from '@chakra-ui/react';
 
-// Frontend / Backend / Cloud / Database / Version Control
-import { FaReact, FaNodeJs, FaAws, FaDatabase, FaPython, FaHtml5, FaCss3Alt, FaDocker, FaGitAlt } from 'react-icons/fa';
-import { SiDjango, SiMongodb, SiMysql, SiFigma, SiExpress} from 'react-icons/si';
+// Icons (All verified from standard FontAwesome & SimpleIcons sets)
+import { 
+  FaReact, FaNodeJs, FaAws, FaDatabase, FaPython, FaHtml5, FaGitAlt,
+  FaShieldAlt, FaLock, FaCertificate, FaLinux, FaServer, FaExclamationTriangle,
+  FaNetworkWired, FaSearch, FaEnvelopeOpenText, FaWindows, FaCloud, FaTerminal, FaUserShield
+} from 'react-icons/fa';
+import { SiMongodb, SiMysql } from 'react-icons/si';
 import { DiJavascript1 } from 'react-icons/di';
-
-// Cybersecurity icons
-import { FaShieldAlt, FaLock, FaCertificate, FaLinux, FaServer, FaExclamationTriangle } from 'react-icons/fa';
 
 // FullScreenSection wrapper
 import FullScreenSection from './FullScreenSection';
 
-
 const categorizedSkills = {
-  Cybersecurity: [
-  { name: 'Wireshark', icon: FaShieldAlt, description: 'Analyzed network traffic and performed protocol analysis to detect anomalies.' },
-  { name: 'Metasploit', icon: FaLock, description: 'Executed penetration tests and vulnerability assessments using Metasploit framework.' },
-  { name: 'Burp Suite', icon: FaLock, description: 'Performed web application security testing including scanning, intrusions, and request interception.' },
-  { name: 'John The Ripper', icon: FaLock, description: 'Cracked password hashes for security testing and auditing purposes.' },
-  { name: 'Hashcat', icon: FaLock, description: 'Used GPU-accelerated password cracking for auditing password strength.' },
-  { name: 'Kali Linux', icon: FaLinux, description: 'Utilized Kali Linux tools for penetration testing, vulnerability assessment, and security research.' },
-  { name: 'OWASP Top 10', icon: FaExclamationTriangle, description: 'Awareness of the top web application security risks and mitigations.' },
-  { name: 'SIEM', icon: FaServer, description: 'Experience with Security Information and Event Management systems for monitoring and incident response.' },
-  { name: 'OpenVAS', icon: FaCertificate, description: 'Conducted vulnerability scanning and assessment.' },
-  { name: 'Nessus', icon: FaCertificate, description: 'Performed vulnerability scanning to identify system weaknesses.' },
-  { name: 'Linux', icon: FaLinux, description: 'Administered Linux systems and secured servers in cybersecurity tasks.' }
-],
-  Frontend: [
-    { name: 'HTML/CSS', icon: FaHtml5, description: 'Crafted responsive and visually appealing websites using HTML5 and CSS3.' },
-    { name: 'JavaScript', icon: DiJavascript1, description: 'Developed interactive web applications utilizing modern JavaScript ES6+.' },
-    { name: 'React', icon: FaReact, description: 'Developed SPA with React, including state management with Redux and UIs with Material-UI.' },
+  "SOC & Defensive Security": [
+    { name: 'Splunk & Microsoft Sentinel (SIEM)', icon: FaServer, description: 'Deployed centralized logging, built custom dashboards, and performed real-time SIEM alert triage to detect suspicious endpoint activity.' },
+    { name: 'Phishing & Incident Response', icon: FaEnvelopeOpenText, description: 'Dissected malicious email headers, extracted actionable IoCs, and executed structured incident response playbooks.' },
+    { name: 'Sysmon & Endpoint Security', icon: FaWindows, description: 'Configured granular Windows event logging to track process creation, network connections, and registry modifications.' },
+    { name: 'Wireshark & Traffic Analysis', icon: FaShieldAlt, description: 'Analyzed packet captures (PCAPs) and performed deep protocol analysis to detect network anomalies and C2 traffic.' },
+    { name: 'Nessus & OpenVAS', icon: FaCertificate, description: 'Conducted comprehensive vulnerability assessments to identify system weaknesses and prioritize remediation.' }
   ],
-  Backend: [
-    { name: 'Node.js', icon: FaNodeJs, description: 'Built RESTful APIs using Express, handling database operations, authentication, and logging.' },
-    { name: 'Python', icon: FaPython, description: 'Scripted efficient, reusable, and modular code in Python for various backend tasks.' },
-    { name: 'Django', icon: SiDjango, description: 'Developed robust web applications with Django, focusing on rapid development and clean, pragmatic design.' }
+  "Offensive Security & Threat Hunting": [
+    { name: 'Nmap & Network Recon', icon: FaSearch, description: 'Executed offensive network discovery, port scanning, and service enumeration to map attack surfaces.' },
+    { name: 'Kali Linux', icon: FaLinux, description: 'Simulated Red Team attack scenarios to test, validate, and fine-tune SIEM detection rules.' },
+    { name: 'Metasploit & Burp Suite', icon: FaLock, description: 'Performed vulnerability exploitation and web application security testing, including request interception.' },
+    { name: 'Hydra, John The Ripper & Hashcat', icon: FaExclamationTriangle, description: 'Simulated brute-force attacks and audited password hash strength to enforce robust authentication policies.' },
+    { name: 'OWASP Top 10', icon: FaUserShield, description: 'Applied knowledge of critical web application security risks to identify and mitigate exploitation attempts.' }
   ],
-  CloudServices: [
-    { name: 'AWS', icon: FaAws, description: 'Deployed and managed applications using EC2, S3, Lambda, and RDS for a scalable cloud architecture.' },
-    // { name: 'Docker', icon: FaDocker, description: 'Containerized applications using Docker for consistent development, delivery, and deployment.' }
+  "Networking, Systems & Cloud": [
+    { name: 'Enterprise Networking', icon: FaNetworkWired, description: 'Configured and troubleshot TCP/IP, DNS, DHCP, VLANs, OSPF, and Cisco IOS routing and switching.' },
+    { name: 'Active Directory & Windows Server', icon: FaWindows, description: 'Managed enterprise user identities, Group Policies (GPO), permissions, and domain security.' },
+    { name: 'Linux Administration', icon: FaLinux, description: 'Administered Ubuntu and Kali systems, hardened servers, and managed services via CLI.' },
+    { name: 'AWS Cloud Security', icon: FaAws, description: 'Managed cloud infrastructure across EC2, S3, IAM, SES, CloudFront, and RDS with a focus on secure access.' },
+    { name: 'Microsoft Azure', icon: FaCloud, description: 'Administered Azure cloud resources, virtual machines, App Services, and Microsoft Entra ID.' }
   ],
-  Databases: [
-    { name: 'MongoDB', icon: SiMongodb, description: 'Utilized MongoDB for storing and querying data efficiently in JSON-like documents.' },
-    { name: 'MySql', icon: SiMysql, description: 'Managed relational databases and performed complex queries with MySQL.' }
-  ],
-  VersionControl: [
-    { name: 'Git', icon: FaGitAlt, description: 'Managed source code versions and collaborated with teams using Git.' }
+  "Scripting, Development & Databases": [
+    { name: 'Python', icon: FaPython, description: 'Developed custom security automation scripts, wireless intrusion prevention tools, and backend logic.' },
+    { name: 'Bash & PowerShell', icon: FaTerminal, description: 'Automated system administration, log parsing, and incident response tasks across Linux and Windows.' },
+    { name: 'SQL & Databases (MySQL / MongoDB)', icon: FaDatabase, description: 'Queried relational and NoSQL databases and analyzed SQL injection vectors.' },
+    { name: 'JavaScript, React & Node.js', icon: FaReact, description: 'Built full-stack web dashboards and RESTful APIs to visualize real-time security and operational data.' },
+    { name: 'Git & GitHub', icon: FaGitAlt, description: 'Managed source code version control, documentation, and collaborative software deployments.' }
   ]
 };
 
