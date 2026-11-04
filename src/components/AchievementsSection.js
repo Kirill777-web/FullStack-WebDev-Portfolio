@@ -12,23 +12,23 @@ import CompTIASecurityPlus from "../images/CompTIASecurityPlus.png";
 import CompTIAAPlus from "../images/CompTIAAPlus.png";
 import CompTIANetworkPlus from "../images/CompTIANetworkPlus.png";
 import Diploma_SMC from "../images/Diploma_SMC.png";
-import EC-Council from "../images/Diploma_SMC.png";
+import EC_Council from "../images/CEH_certificate_of _course_complition.png";
 
 const achievements = [
-  {
-  title: 'Certified Ethical Hacker (CEH) – Official Training Completed',
-  year: 'EC-Council | 2026',
-  description:
-    'Completed the official EC-Council Certified Ethical Hacker (CEH) training program, gaining hands-on experience in offensive security methodologies, reconnaissance, network scanning, vulnerability analysis, and system exploitation. Utilizing this offensive mindset to strengthen defensive capabilities, identify attack patterns in SIEM logs, and enhance incident response as I prepare for the final certification exam.,
-  imageUrl: EC-Council,
-  verified: true,
-},
   {
   title: 'System Management & Cybersecurity Diploma',
   year: 'Oulton College | 2026',
   description:
     'Completed an intensive, hands-on diploma program built around the core CompTIA curriculum (A+, Network+, and Security+). Gained practical expertise in enterprise system administration, Microsoft Active Directory, network security, and Python scripting, alongside cloud infrastructure management across AWS and Microsoft Azure.,
   imageUrl: Diploma_SMC,
+  verified: true,
+},
+  {
+  title: 'Certified Ethical Hacker (CEH) V13 AI – Official Training Completed',
+  year: 'EC-Council | 2025',
+  description:
+    'Completed the official EC-Council Certified Ethical Hacker (CEH) training program, gaining hands-on experience in offensive security methodologies, reconnaissance, network scanning, vulnerability analysis, and system exploitation. Utilizing this offensive mindset to strengthen defensive capabilities, identify attack patterns in SIEM logs, and enhance incident response as I prepare for the final certification exam.,
+  imageUrl: EC_Council,
   verified: true,
 },
   {
