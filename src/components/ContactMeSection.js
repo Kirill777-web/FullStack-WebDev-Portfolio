@@ -103,7 +103,7 @@ const ContactMeSection = () => {
                 <Select id='type' name='type' {...formik.getFieldProps('type')}>
                   <option value='hireMe'>SOC / Cybersecurity Role Opportunity</option>
                   <option value='openSource'>
-                    Open source consultancy session
+                    Full-Time Job Opportunity
                   </option>
                   <option value='other'>Other</option>
                 </Select>
