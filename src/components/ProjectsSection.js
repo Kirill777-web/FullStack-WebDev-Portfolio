@@ -5,6 +5,13 @@ import Card from './Card';
 
 const projects = [
   {
+    title: 'Enterprise SOC Simulation Lab (Splunk & Sysmon)',
+    description:
+      'Deployed a centralized logging architecture using Splunk Enterprise on Ubuntu to monitor Windows endpoints. Executed Red Team attack scenarios (Hydra brute-force, Nmap reconnaissance) from Kali Linux against target machines, and configured Sysmon for granular event logging with custom Splunk dashboards to visualize and alert on anomalous activity in real time. Skills: Splunk Enterprise, Sysmon, SIEM, Threat Detection, Log Analysis, Kali Linux, Ubuntu, Windows Server.',
+    getImageSrc: () => require('../images/Splunk.jpg'),
+    url: 'https://lnkd.in/p/gCbuqeJe',
+  },
+  {
     title: 'Automated Phishing Email Header Analyzer PRO (Python)',
     description:
       'Built an all-in-one desktop application in Python designed for rapid SOC phishing triage and incident response. Automates hop-by-hop SMTP header tracing to expose true originating IPs, decodes obfuscated Base64/Quoted-Printable payloads for safe previewing, defangs malicious IoCs, scores attachment risks via MIME parsing, and integrates with VirusTotal and AbuseIPDB APIs for real-time threat intelligence enrichment. Skills: Python, Phishing Triage, Threat Intelligence APIs (VirusTotal, AbuseIPDB), MIME/Header Analysis, IoC Defanging, Security Automation.',
@@ -26,11 +33,11 @@ const projects = [
     url: 'https://tryhackme.com/p/Kirill777',
   },
   {
-    title: 'Enterprise SOC Simulation Lab (Splunk & Sysmon)',
+    title: 'Wireshark 101: Deep Packet Inspection & Protocol Analysis',
     description:
-      'Deployed a centralized logging architecture using Splunk Enterprise on Ubuntu to monitor Windows endpoints. Executed Red Team attack scenarios (Hydra brute-force, Nmap reconnaissance) from Kali Linux against target machines, and configured Sysmon for granular event logging with custom Splunk dashboards to visualize and alert on anomalous activity in real time. Skills: Splunk Enterprise, Sysmon, SIEM, Threat Detection, Log Analysis, Kali Linux, Ubuntu, Windows Server.',
-    getImageSrc: () => require('../images/Splunk.jpg'),
-    url: 'https://lnkd.in/p/gCbuqeJe',
+      'Completed the advanced hands-on Wireshark traffic analysis track, focusing on core protocol behavior and threat detection within enterprise network captures. Mastered display and capture filtering, packet dissection, and the analysis of ARP, ICMP, TCP, DNS, HTTP, and HTTPS traffic. Applied protocol inspection techniques to investigate malicious exploit PCAPs and identify suspicious anomalies during threat hunting. Skills: Wireshark, Packet Analysis, PCAP Investigation, Network Protocols (TCP/DNS/HTTP/HTTPS), Traffic Filtering, Anomaly Detection.',
+    getImageSrc: () => require('../images/wireshark.png'),
+    url: 'https://www.linkedin.com/in/kirill-lazutin-9b18a115b/', 
   },
   {
     title: 'Sentinel Pro (Enterprise WIPS Prototype)',
